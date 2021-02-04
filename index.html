@@ -3,6 +3,10 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font -->    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+
     <!-- Bootstrap FA-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- Bootstrap CDN-->
@@ -12,7 +16,7 @@
     <meta charset="utf-8">
     <title>Freelancer</title>
   </head>
-  <body class="debug">
+  <body class="">
 
   <header>
     <div id="header-top" class="text-color-white bg-color-dark-blue">
@@ -21,18 +25,18 @@
 
         <div class="row">
 
-          <div id="logo-outer" class="col-xs-5">
+          <div id="logo-outer" class="col-xs-6 height-small">
             <span id="logo-text">Start Bootstrap</span>
           </div>
 
-          <div id="main-menu-outer" class="col-xs-7">
+          <div id="main-menu-outer" class="col-xs-6 height-small">
 
             <nav id="main-menu">
 
               <ul class="inline-list hidden-xs hidden-sm">
-                <li>Item</li>
-                <li>Item</li>
-                <li>Item</li>
+                <li><a>Portfolio</a></li>
+                <li><a>about</a></li>
+                <li><a>contact</a></li>
               </ul>
 
               <span id="hamburger-icon" class="fas fa-bars visible-xs visible-sm"></span>
@@ -46,21 +50,33 @@
 
     </div>
 
-    <div id="header-bottom" class="text-color-white bg-color-green">
+    <div id="header-bottom" class=" text-color-white bg-color-green">
+      <div class="wrapper padding-top-more padding-bottom-more">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="ms-jumbotron">
 
-      <div class="jumbo">
-        <!--
-          Jumbotron content here
-        -->
-      </div>
+                <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="avatar">
 
-    </div>
+                <h1>Start Bootstrap</h1>
+
+                <hr>
+                <span>item - </span>
+                <span>item - </span>
+                <span>item</span>
+
+              </div>  <!-- .ms-jumbotron END -->
+            </div>  <!-- .col-xs-12 END -->
+          </div>  <!-- .row END -->
+        </div>  <!-- .container-fluid END -->
+    </div>  <!-- #header-bottom END -->
 
   </header>
 
   <main>
 
-    <section id="portfolio">
+    <section id="portfolio" class="padding-top-more padding-bottom-more">
 
     <div class="container">
 
@@ -73,38 +89,38 @@
       <div id="portfolio-images" class="row">    <!-- Portfolio Images Row -->
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/cabin.png" alt="cabin">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/cake.png" alt="cake">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/circus.png" alt="circus">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/game.png" alt="game">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/safe.png" alt="safe">
           </div>
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-4">
-          <div class="column-inner-content">
-
+          <div class="column-inner-content padding-bottom-standard padding-top-standard">
+            <img src="img/submarine.png" alt="submarine">
           </div>
         </div>
 
@@ -115,51 +131,67 @@
 
     </section>
 
-    <section id="about" class="bg-color-green text-color-white">
+    <section id="about" class="  bg-color-green text-color-white padding-top-more padding-bottom-more">
+      <div class="wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>About</h2>
+            </div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>About</h2>
-          </div>
-        </div>
+            <div class="col-xs-12 col-sm-6">
+              <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+            </div>
 
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6"></div>
-              <div class="col-xs-12 col-sm-6"></div>
+            <div class="col-xs-12 col-sm-6">
+              <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            </div>
+            <div class="col-xs-12">
+              Free Download
             </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-xs-12">
-            download
-          </div>
-        </div>
-
       </div>
-
-
     </section>
 
-    <section id="contact-me">
-      <div class="container">
-        <div class="row">
+    <section id="contact-me" class="padding-top-more padding-bottom-more">
+      <div class="wrapper">
+        <div class="container-fluid">
+          <div class="row">
 
-          <div class="col-xs-10 col-xs-offset-1">
-              <h2>Contact Me</h2>
+            <div class="col-xs-12">
+                <h2>Contact Me</h2>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="outer-form">
+                <form>
+
+
+
+                  <div class="ms-form-group">
+                    <input type="text" class="ms-input-style form-control" id="InputName" placeholder="Name">
+                  </div>
+
+                  <div class="ms-form-group">
+                    <input type="email" class="ms-input-style form-control" id="InputEmail" placeholder="Email Address">
+                  </div>
+
+                  <div class="ms-form-group">
+                    <input type="text" class="ms-input-style form-control" id="exampleInputEmail1" placeholder="Phone Number">
+                  </div>
+
+                  <div class="ms-form-group">
+                    <textarea class="ms-input-style form-control" name="message" rows="8" cols="80" placeholder="Message"></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-default">Send</button>
+
+                </form>
+              </div>
+            </div>
+
           </div>
-
-          <div class="col-xs-10 col-xs-offset-1">
-            <form class="" action="index.html" method="post">
-              <!--
-              form content here
-            -->
-            </form>
-          </div>
-
         </div>
       </div>
     </section>
@@ -167,31 +199,39 @@
   </main>
 
   <footer>
-    <div class="container">
-      <div class="row bg-color-light-blue text-color-white">
+    <div class="inner-footer text-color-white">
 
-        <div class="col-xs-12 col-sm-4">
-          <h3>heading</h3>
+      <div class="footer-top bg-color-light-blue padding-top-more padding-bottom-more">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4">
+              <h3>location</h3>
+              <p> 2215 John Daniel Drive Clark, MO 65243 </p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h3>around the web</h3>
+              <ul class="inline-list social-links">
+                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-plus-g"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter"></span></a></li>
+                <li><a href="#"><span class="fab fa-linkedin"></span></a></li>
+              </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+              <h3>About Freelancer</h3>
+              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <a>Start Bootstrap</a>.</p>
+            </div>
+          </div>
         </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <h3>heading</h3>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <h3>heading</h3>
-        </div>
-
       </div>
 
-      <div id="copyright-bar" class="row bg-color-dark-blue text-color-white">
-        <div class="col-xs-12">
-          <span id="copyright-text">Copyright &copy; Your Website 2019</span>
-        </div>
+      <div class="footer-bottom bg-color-dark-blue height-small">
+
+        <span>Copyright &copy; Your Website 2021</span>
+
       </div>
 
     </div>
-
   </footer>
 
   </body>
