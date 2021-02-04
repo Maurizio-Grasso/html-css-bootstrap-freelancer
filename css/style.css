@@ -157,10 +157,6 @@ H E A D E R
 ###########
 */
 
-header {
-  text-transform: uppercase;
-}
-
 #header-top {  /* barra superiore fissa */
   position: fixed;
   left: 0;
