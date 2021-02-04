@@ -1,33 +1,18 @@
 /*
-#########
-D E G U G
-#########
-*/
-
-.debug .row  {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.debug [class*="col-"]  {
-  border: 1px dashed rgba(0, 0, 0, 0.1);
-  min-height: 50px;
-}
-
-/*
-#########
-R E S E T
-#########
+#########################
+R E S E T & D E F A U L T
+#########################
 */
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  text-align: center;
 }
 
 * {
@@ -44,11 +29,6 @@ a:hover {
   text-decoration: none;
   color: inherit;
 }
- /*
- ###################
- U T I L I T I E S
- ###################
- */
 
 .wrapper {
   width: 75%;
@@ -56,13 +36,14 @@ a:hover {
   margin:auto;
 }
 
-ul.inline-list li {
-  display: inline-block;
-}
-
-.text-color-white {
-  color:white;
-}
+/*
+###################
+C U S T O M
+T Y P H O G R A P H Y
+M A R G I N S &
+P A D D I N G S
+###################
+*/
 
 h1 ,
 h2 ,
@@ -70,31 +51,98 @@ h3 {
   text-transform: uppercase;
 }
 
-.bg-color-green {
-  background-color: #1abc9c;
-}
-.bg-color-dark-blue {
-  background-color: #2c3e50;
-}
-.bg-color-light-blue {
-  background-color: #3a546d;
-}
-
-.height-small {
+.ms-height-small {
   height: 8rem;
 }
 
 .padding-top-standard {
-  padding-top: 15px;
+  padding-top: 1.5rem;
 }
 .padding-bottom-standard {
-  padding-bottom: 15px;
+  padding-bottom: 1.5rem;
 }
 .padding-top-more {
-  padding-top: 25px;
+  padding-top: 2.5rem;
 }
 .padding-bottom-more {
-  padding-bottom: 25px;
+  padding-bottom: 2.5rem;
+}
+.margin-top-standard {
+  margin-top: 1.5rem;
+}
+.margin-bottom-standard {
+  margin-bottom: 1.5rem;
+}
+
+ul.inline-list li {
+  display: inline-block;
+}
+
+/*
+##############
+C O L O R S
+&
+B U T T O N S
+##############
+*/
+
+.text-color-white {
+  color:white;
+}
+
+.ms-bg-color-green {
+  background-color: #1abc9c;
+}
+.ms-bg-color-dark-blue {
+  background-color: #2c3e50;
+}
+.ms-bg-color-light-blue {
+  background-color: #3a546d;
+}
+
+.btn.ms-btn-primary {
+  color: white;
+  background-color: #1abc9c;
+}
+.btn.ms-btn-transparent {
+  color: white;
+  border: 1px solid white;
+}
+
+/*
+################
+M Y  C U S T O M
+D I V I D E R
+################
+*/
+
+.ms-divider span::after ,
+.ms-divider span::before {  /* Divider Personalizzato*/
+  content: "";
+  display: inline-block;
+  width:100px;
+  height: 0.5rem;
+  vertical-align: middle;
+  border-radius: 0.5rem;
+  max-width: 30%;
+}
+.ms-divider .fas {  /* La stellina di font awesome */
+  font-size: 5rem;
+  vertical-align: middle;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+#header-bottom .ms-divider span::after ,
+#header-bottom .ms-divider span::before ,
+#about .ms-divider span::after ,
+#about .ms-divider span::before {
+  background-color: white;  /* Il divider è bianco in queste sezioni*/
+}
+#contact-me .ms-divider span::after ,
+#contact-me .ms-divider span::before ,
+#portfolio .ms-divider span::after ,
+#portfolio .ms-divider span::before {
+  background-color: black;  /* Il divider è nero in queste sezioni*/
 }
 
 /*
@@ -107,18 +155,24 @@ header {
   text-transform: uppercase;
 }
 
-#main-menu-outer ,
+#header-top {  /* barra superiore fissa */
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 42;
+}
+
 #logo-outer {
-  height: 8rem;
+  text-align: left;
 }
 
 #main-menu {
   float: right;
   text-align: right;
 }
-
-#logo-outer {
-  text-align: left;
+#main-menu li:not(:last-child) {
+  margin-right: 1.5rem;
 }
 
 #hamburger-icon {
@@ -132,6 +186,7 @@ header nav ,
 }
 
 #header-bottom {
+  margin-top: 8rem;
   overflow: auto;
 }
 
@@ -146,17 +201,10 @@ P O R T F O L I O
 #################
 */
 
-
-.column-inner-content img {
+#portfolio .column-inner-content img {
   max-width:100%;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
-
-/*
-#########
-A B O U T
-#########
-*/
 
 /*
 #############
@@ -164,12 +212,8 @@ C O N T A C T
 #############
 */
 
-.ms-form-group {
-  margin-bottom: 15px;
-}
-
 form .ms-form-group .ms-input-style ,
-form .ms-form-group .ms-input-style:focus {
+form .ms-form-group .ms-input-style:focus {  /* Reset stile input box ed assegnazione regole personalizzate*/
   color: inherit;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -186,9 +230,6 @@ form .ms-form-group .ms-input-style:focus {
   font-size: 2rem;
 }
 
-
-
-
 /*
 ###########
 F O O T E R
@@ -197,17 +238,20 @@ F O O T E R
 
 footer ul.social-links li span {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: 1px solid white;
   border-radius: 50%;
-  line-height: 5rem;
-  width:5rem;
+  line-height: 4rem;
+  width:4rem;
 }
 footer ul.social-links li:not(:last-child) span {
-  margin-right:10px;
+  margin-right:1rem;
 }
-
 
 footer .footer-bottom {
   line-height: 8rem;
+}
+
+footer p a {  /* colore link nel footer*/
+  color: #1abc9c;
 }
